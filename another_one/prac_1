@@ -1,0 +1,14 @@
+#TEST
+fruits = {'apple': 2, 'pear': 5, 'oranges': 6}
+
+class Fruit:
+    pass
+
+fruit = Fruit()
+
+name = fruit.__class__
+
+fruits['__class__'] = name
+
+print(f"{fruits}"
+
