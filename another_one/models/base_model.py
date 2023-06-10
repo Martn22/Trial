@@ -11,10 +11,7 @@ class BaseModel:
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
     
-    def __str__(self):
-        """Returns string representation of object"""
-        return f"{type(self).__name__} ({self.id}) {str(self.__dict__)}"
-        
+    
     def save(self):
         """records update time"""
         self.updated_at = datetime.now()
